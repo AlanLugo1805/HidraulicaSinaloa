@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hidraulica de Sinaloa</title>
+    <link rel="stylesheet" href="a.css">
 </head>
 <body>
-    Si
+    <nav>
+        <div class="logo-container">
+            <img src="img/logo.jpeg" alt="Logo Empresa">
+            <div class="logo-text">Hidráulica de Sinaloa</div>
+          </div>
+    
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+    
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proyectos">Refacciones</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    
+      <script>
+        function toggleMenu() {
+          const navLinks = document.getElementById('navLinks');
+          navLinks.classList.toggle('active');
+        }
+      </script>
 </body>
 </html>
