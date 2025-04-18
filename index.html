@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hidraulica de Sinaloa</title>
+    <title>Hidráulica de Sinaloa</title>
     <link rel="stylesheet" href="a.css">
 </head>
 <body>
@@ -11,28 +11,30 @@
         <div class="logo-container">
             <img src="img/logo.jpeg" alt="Logo Empresa">
             <div class="logo-text">Hidráulica de Sinaloa</div>
-          </div>
+        </div>
     
         <div class="menu-toggle" onclick="toggleMenu()">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
     
         <ul class="nav-links" id="navLinks">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#proyectos">Refacciones</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="refacciones.html">Refacciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
-      </nav>
-    
-      <script>
+    </nav>
+
+    <script>
         function toggleMenu() {
-          const navLinks = document.getElementById('navLinks');
-          navLinks.classList.toggle('active');
+            const navLinks = document.getElementById('navLinks');
+            const menuToggle = document.querySelector('.menu-toggle');
+            navLinks.classList.toggle('active'); // Mostrar u ocultar los enlaces
+            menuToggle.classList.toggle('active'); // Activar la animación de las barras
         }
-      </script>
+    </script>
 </body>
 </html>
